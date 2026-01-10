@@ -1,7 +1,7 @@
 using FiapCloudGames.Domain;
-using FiapCloudGames.Payments.Api.Data;
+using FiapCloudGames.Payments.Application.Data;
 
-namespace FiapCloudGames.Payments.Api.Repositories
+namespace FiapCloudGames.Payments.Application.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

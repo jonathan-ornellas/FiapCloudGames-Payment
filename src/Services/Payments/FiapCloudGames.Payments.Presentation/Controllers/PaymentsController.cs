@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using FiapCloudGames.Payments.Api.DTOs;
-using FiapCloudGames.Payments.Business;
+using FiapCloudGames.Payments.Application;
 using FiapCloudGames.Domain.Entities;
 using FiapCloudGames.Domain.ValueObjects;
 using Microsoft.AspNetCore.Authorization;
-using FiapCloudGames.Payments.Api.Data;
+using FiapCloudGames.Payments.Application.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 

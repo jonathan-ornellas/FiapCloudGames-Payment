@@ -1,5 +1,5 @@
-using FiapCloudGames.Payments.Api.Data;
-using FiapCloudGames.Payments.Api.Repositories;
+using FiapCloudGames.Payments.Application.Data;
+using FiapCloudGames.Payments.Application.Repositories;
 using FiapCloudGames.EventSourcing;
 using FiapCloudGames.Shared.RabbitMQ;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -8,7 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
-using FiapCloudGames.Payments.Business;
+using FiapCloudGames.Payments.Application;
 using FiapCloudGames.Domain;
 using FluentValidation.AspNetCore;
 using FluentValidation;

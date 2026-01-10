@@ -1,7 +1,7 @@
 using FiapCloudGames.Domain;
 using FiapCloudGames.Domain.Entities;
 
-namespace FiapCloudGames.Payments.Business
+namespace FiapCloudGames.Payments.Application
 {
     public class PaymentService : IPaymentService
     {

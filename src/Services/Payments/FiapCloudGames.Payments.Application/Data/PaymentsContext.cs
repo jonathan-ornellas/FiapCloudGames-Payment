@@ -1,6 +1,6 @@
-namespace FiapCloudGames.Payments.Api.Data;
+namespace FiapCloudGames.Payments.Application.Data;
 
-using FiapCloudGames.Payments.Api.Models;
+using FiapCloudGames.Payments.Application.Models;
 using Microsoft.EntityFrameworkCore;
 
 public class PaymentsContext : DbContext

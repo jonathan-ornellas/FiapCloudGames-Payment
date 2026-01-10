@@ -1,8 +1,9 @@
 using FiapCloudGames.Domain.Entities;
-using FiapCloudGames.Payments.Api.Data;
-using FiapCloudGames.Payments.Business;
+using FiapCloudGames.Payments.Application.Data;
+using DomainPayment = FiapCloudGames.Domain.Entities.Payment;
+using DataPayment = FiapCloudGames.Payments.Application.Models.Payment;
 
-namespace FiapCloudGames.Payments.Api.Repositories
+namespace FiapCloudGames.Payments.Application.Repositories
 {
     public class PaymentRepository : IPaymentRepository
     {
@@ -13,9 +14,9 @@ namespace FiapCloudGames.Payments.Api.Repositories
             _context = context;
         }
 
-        public async Task AddAsync(Payment payment, CancellationToken ct = default)
+        public async Task AddAsync(DomainPayment payment, CancellationToken ct = default)
         {
-                        await _context.Payments.AddAsync(new Models.Payment { UserId = Guid.Parse(payment.UserId.ToString()), GameId = Guid.Parse(payment.GameId.ToString()), Amount = payment.Amount.Value, PaymentMethod = payment.PaymentMethod, Status = payment.Status }, ct);
+            await _context.Payments.AddAsync(new DataPayment { UserId = Guid.Parse(payment.UserId.ToString()), GameId = Guid.Parse(payment.GameId.ToString()), Amount = payment.Amount.Value, PaymentMethod = payment.PaymentMethod, Status = payment.Status }, ct);
         }
     }
 }

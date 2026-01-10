@@ -1,7 +1,7 @@
 using FiapCloudGames.Domain;
 using FiapCloudGames.Domain.Entities;
 using FiapCloudGames.Domain.ValueObjects;
-using FiapCloudGames.Payments.Business;
+using FiapCloudGames.Payments.Application;
 using Moq;
 using Xunit;
 

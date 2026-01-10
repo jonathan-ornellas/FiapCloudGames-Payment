@@ -1,4 +1,4 @@
-namespace FiapCloudGames.Payments.Api.Models;
+namespace FiapCloudGames.Payments.Application.Models;
 
 public class Payment
 {
